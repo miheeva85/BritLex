@@ -107,9 +107,19 @@ nav{
 nav>ul{
     justify-content: center;
     gap: 36px;
-    color: #263238;
     font-size: 20px;
     font-weight: 500;
+
+}
+nav>ul>li{
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    color: #263238;
+}
+nav>ul>li:hover{
+    color:#8F95A5;
+    cursor:pointer;
 }
 
 .nav-menu{
@@ -128,7 +138,16 @@ nav>ul{
     text-align: center;
     color: #000;
     font-size: 24px;
+    cursor: pointer;
 }
+
+.header--button:hover{
+    color: #FFFFFF;
+    background-color: #263238;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
 
 .banner{
     display: flex;
@@ -157,12 +176,22 @@ nav>ul{
 }
 
 .button{
-    border-radius: 15px;
     flex-shrink: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
     color: #FFFFFF;
     background-color: #263238;
     text-decoration: none;
     cursor: pointer;
+    
+}
+
+.button:hover{
+    border: 1px solid #263238;  
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #000;
+    transition: all 400ms cubic-bezier(0.550, 0.055, 0.675, 0.190); 
 }
 
 .banner .button{
@@ -275,7 +304,7 @@ h2.about-h2{
     text-align: left;
     font-size: 48px;
     font-weight: 600;
-    line-height: 80px; 
+    line-height: 80px;
 }
 
 .about--p{
@@ -383,6 +412,10 @@ p.count{
     color: #8F95A5;
     font-family: Poppins;
     font-size: 16px;
+}
+
+.form-input:focus{
+    background-color:#EEEEEE;
 }
 
 .contact .button{
