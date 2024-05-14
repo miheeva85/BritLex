@@ -24,8 +24,8 @@
     </header>
 
     <div class="banner">
-        <div class="banner--right">
-            <div class="banner--right--header">
+        <div class="banner--left">
+            <div class="banner--left__header">
                 <h1>Learn </br>
                     Any Foreign</br>
                     Language</br>
@@ -42,7 +42,7 @@
     <main>
         <h2>Skills</h2>
         <div class="skills">
-            <div class="skills--right">
+            <div class="skills--left">
                 <div class="skill-card">
                     <img src="images/Speaking.svg" alt="">
                     <h3>Speaking</h3>
@@ -55,7 +55,7 @@
                     <a href="" class="button">Learn more</a>
                 </div> 
             </div>
-            <div class="skills--left">
+            <div class="skills--right">
                 <div class="skills--top">
                     <div class="skill-card">
                         <img src="images/Writing.svg" alt="">
@@ -75,13 +75,16 @@
                     </div>   
                 </div>
                 <div class="skills--bottom">
-                    <div class="skill-card">
-                        <img src="images/Listening.svg" alt="">
-                        <h3>Listening</h3>
-                        <p>Here you can find activities to practise
-                            your listening skills. Listening will help you
-                            to improve your understanding .</p>
-                        <a href="" class="button">Learn more</a>
+                    <div class="skill-card__bottom">
+                        <div class="skill-card__left">                        
+                            <h3>Listening</h3>
+                            <p>Here you can find activities to practise your listening skills. Listening will help you to improve your understanding .</p>
+                            <a href="" class="button">Learn more</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/Listening.svg" alt="">
+                        </div>
+                        
                     </div>    
                 </div>
 
@@ -89,9 +92,9 @@
         </div>
 
         <div class="about">
-            <div class="about--right">
+            <div class="about--left">
                 <h2 class="about-h2">About Us</h2>
-                <p>The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.</p>
+                <p class="about--p">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.</p>
                 <div class="counters">
                     <div class="counter">
                         <p class="count">800</p>
@@ -114,7 +117,7 @@
         <div class="pricing">
             <h2>Pricing</h2>
             <div class="pricing--tarif">
-                <div class="pricing--tarif--card">
+                <div class="pricing--tarif__card">
                     <img src="images/price1.png" alt="">
                     <h3>Self-study online course</h3>
                     <p>Start learning English online in live classes
@@ -122,14 +125,14 @@
                         from all over the world.</p>
                     <div class="price">£5.99</div>
                 </div>
-                <div class="pricing--tarif--card">
+                <div class="pricing--tarif__card">
                     <img src="images/price2.png" alt="">
                     <h3>Live online classes</h3>
                     <p>Interactive group classes with expert
                         teachers. Free 7-day trial</p>
                     <div class="price">£12.99</div>
                 </div>
-                <div class="pricing--tarif--card">
+                <div class="pricing--tarif__card">
                     <img src="images/price3.png" alt="">
                     <h3>Personal Tuition</h3>
                     <p>Online one-to-one English tutoring – enjoy
@@ -146,10 +149,10 @@
             <div class="contact--form">
                 <h2>Contact Us</h2>
                 <p>Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
-               <div class="form-group">
-                <input id="my-input" class="form-control" type="text" name="Enter Your E-mail">
+                <div class="form">
+                <input id="my-input" class="form-input" type="text" name="E-mail" placeholder="Enter Your E-mail">
                 <button type="button" class="button">Subscribe</button>
-               </div>
+                </div>
             </div>
 
         </div>

@@ -41,9 +41,9 @@ table {
 }
 
 body{
-    font-family: Poppins;
-    margin: 70px auto;
     width: 1348px;
+    margin: 70px auto;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -63,16 +63,15 @@ h1, h2, h3{
 }
 
 p{
+    font-weight: 400;
     color: #8F95A5;
     font-size: 20px;
-    padding-bottom: 60px;
-    padding-right: 60px;
 }
 
 h1{
+    padding-bottom: 40px;
     font-size: 64px;
     line-height: 80px;
-    padding-bottom: 40px;
 }
 
 h2{
@@ -90,7 +89,6 @@ h3{
 header{
     display: flex;
     align-items: center;
-    padding-bottom: 75px;
 }
 
 nav{
@@ -107,12 +105,11 @@ nav{
 }
 
 nav>ul{
-
+    justify-content: center;
+    gap: 36px;
     color: #263238;
     font-size: 20px;
     font-weight: 500;
-    justify-content: center;
-    gap: 10px;
 }
 
 .nav-menu{
@@ -121,40 +118,51 @@ nav>ul{
 }
 
 .header--button{
-    color: #000;
-    font-size: 24px;
     width: 220px;
     height: 70px;
     flex-shrink: 0;
+    padding: 17px 17px;
     border-radius: 5px;
     border: 2px solid #263238;  
     text-decoration: none;
     text-align: center;
-    padding: 17px 17px;
+    color: #000;
+    font-size: 24px;
 }
 
 .banner{
     display: flex;
     justify-content: start; 
     align-items:center;
-    padding-bottom: 100px;
+    padding-bottom: 115px;
 }
 
-.banner--right{
+.banner p{
+    padding-right: 57px;
+    padding-bottom: 61px;
+}
+
+.banner img{
+    padding-left: 38px;
+}
+
+.banner--left{
     color: #8F95A5;
     font-size: 24px;
+    width: 632px;
 }
 
-.banner--right--header{
+.banner--left__header{
     display: flex;
 }
 
 .button{
-    color: #FFFFFF;
-    flex-shrink: 0; 
     border-radius: 15px;
+    flex-shrink: 0;
+    color: #FFFFFF;
     background-color: #263238;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .banner .button{
@@ -166,16 +174,19 @@ nav>ul{
 .skills {
     display: flex;
     gap: 18px;
+    padding-bottom: 282px;
 }
-
+main h2{
+    padding-bottom: 92px;
+}
 .skills h3{
     padding: 0 0 5px 43px;
 }
 
 .skills p{
     padding-left: 43px;
-    font-size: 16px;
     padding-bottom: 36px;
+    font-size: 16px;
 }
 
 .skill-card{
@@ -185,9 +196,10 @@ nav>ul{
 .skills .button{
     width: 230px;
     height: 60px;
-    flex-shrink: 0;
-    padding: 17px 63px;
+    padding: 17px 64px;
     margin-left: 43px;
+    margin-bottom: 64px;
+    flex-shrink: 0;
 }
 
 .skills img{
@@ -195,22 +207,43 @@ nav>ul{
 }
 
 .skills--right{
-    flex-shrink: 0;
-
+    display: inline-block;
+    width: 435px;
+    height: 894px;
+    vertical-align: top; 
+    text-align: left;
 }
 
-.skills-left {
+.skills--right img{
+    max-height: 293px;
+    padding: 9px 63px auto 1px;
+}
+
+.skills-left{
     display: flex;
+    gap: 18px;
+    height: 894px;
+}
+
+.skill-card__left h3{
+    padding-top: 43px;
 }
 
 .skills--top{
     display: flex;
     gap: 18px;
+    height: 531px;
+    
+}
+
+.skills--bottom{
+    width: 885px;
+    height: 343px;
 }
 
 .skill-card{
-    flex-shrink: 0;
     width: 434px;
+    flex-shrink: 0;
     border-radius: 10px;
     background: #F5F5F5;
 }
@@ -220,21 +253,33 @@ nav>ul{
     padding-top: 18px;
 }
 
-.about{
+.skill-card__bottom{
     display: flex;
-    padding-bottom: 230px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    margin-top: 18px;
 }
 
-.about--right{
+.about{
+    display: flex;
+    padding-bottom: 229px;
+}
+
+.about--left{
     padding-right: 160px;
+
 }
 
 h2.about-h2{
+    padding-bottom: 23px;
+    text-align: left;
     font-size: 48px;
     font-weight: 600;
     line-height: 80px; 
-    text-align: left;
-    padding-bottom: 23px;
+}
+
+.about--p{
+    padding-bottom: 60px;
 }
 
 .counters{
@@ -246,6 +291,10 @@ h2.about-h2{
     width: 33%;
 }
 
+.counter p{
+    text-align: center;
+}
+
 p.count{
     display: block;
     color: #2A3246;
@@ -255,7 +304,7 @@ p.count{
 }
 
 .pricing{
-    padding-bottom: 261px;
+    padding-bottom: 230px;
 }
 
 .pricing h2{
@@ -267,44 +316,42 @@ p.count{
     gap:20px;
 }
 
-.pricing--tarif--card{
+.pricing--tarif__card{
     display: inline-block;
     width: 30%;
-    text-align: left; 
-    vertical-align: top; 
     margin-right: 10px; 
+    vertical-align: top; 
+    text-align: left;
 }
 
-.pricing--tarif--card img {
-    /* max-width: 100%; */
+.pricing--tarif__card img {
     height: 311px;
     padding-bottom: 40px;
 }
 
-.pricing--tarif--card h3{
+.pricing--tarif__card h3{
     height: 80px;
 }
 
-.pricing--tarif--card p{
+.pricing--tarif__card p{
     height: 90px;
 }
 
 .price{
-    color: #263238;
-    font-size: 30px;
+    display: inline-block;
+    height: 45px;
     padding-left: 18px;
     border-radius: 0 5px 5px 0;
+    color: #263238;
+    font-size: 30px;
     background-color: #EEEEEE;
-    display: inline-block;
     text-align: end;
-    height: 45px;
 }
 
 .price:after{
     content:  "per month";
-    background-color: #EEEEEE;
     border-radius: 0 5px 5px  0;
-    
+    background-color: #EEEEEE; 
 }
 
 .contact{
@@ -312,9 +359,43 @@ p.count{
     padding-bottom: 133px;
 }
 
+.contact h2{
+    padding-bottom: 37px;
+    text-align: left;
+}
+
+.contact--form{
+    padding-left: 110px;
+}
+
+.form {
+    margin-bottom: 1rem; 
+}
+
+.form-input{
+    width: 450px;
+    height: 80px;
+    margin-right: 12px;
+    padding: 26px 31px 30px 33px;
+    border: 1px solid #bdbdbd; 
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    color: #8F95A5;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.contact .button{
+    width: 264px;
+    height: 80px;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 footer{
     display: flex;
-    border-top: 1px solid #C4C4C4;
+    justify-content: space-between;
     padding-top: 31px;
-    gap: 20px;
+    border-top: 1px solid #C4C4C4;
 }
